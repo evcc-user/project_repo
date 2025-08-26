@@ -3,16 +3,17 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git url: 'https://github.com/evcc-user/project_repo.git', branch: 'main'
-            }
-        }
+   	steps {
+        git url: 'https://github.com/evcc-user/project_repo.git', branch: 'main'
+        bat 'dir' // Lists files and directories in the workspace
+    	    }
+	}
 
         stage('Build') {
             steps {
                 echo "Building project using command prompt..."
                 bat '''
-                cd Blinky_LED_1_KIT_TC397_TFT\\scripts
+                cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT\\scripts
                 set_aurix_env.bat
                 make clean
                 make all
