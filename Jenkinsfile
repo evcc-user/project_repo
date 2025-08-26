@@ -10,15 +10,17 @@ pipeline {
 	}
 
         stage('Build') {
-            steps {
-                echo "Building project using command prompt..."
-                bat '''
-                cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT\\scripts
-                set_aurix_env.bat
-                make clean
-                make all
-                '''
-            }
+                steps {
+					echo "Building project using command prompt..."
+					bat '''
+					cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT\\scripts
+					call set_aurix_env.bat
+					cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT
+					make clean
+					make all
+					'''
+					}
+
         }
 
         stage('Test') {
