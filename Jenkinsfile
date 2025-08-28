@@ -17,9 +17,9 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building project using Jenkins workspace..."
+                echo "Building project from Jenkins workspace..."
                 bat '''
-                cd scripts
+                cd Blinky_LED_1_KIT_TC397_TFT\\scripts
                 call set_aurix_env.bat
                 cd ..
                 make clean
