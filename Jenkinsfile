@@ -1,32 +1,36 @@
 pipeline {
     agent any
 
+    triggers {
+        // Auto-trigger build when someone pushes to GitHub
+        githubPush()
+    }
+
     stages {
         stage('Checkout') {
-   	steps {
-        git url: 'https://github.com/evcc-user/project_repo.git', branch: 'main'
-        bat 'dir' // Lists files and directories in the workspace
-    	    }
-	}
+            steps {
+                // Jenkins will clone the repo into the current workspace
+                git url: 'https://github.com/evcc-user/project_repo.git', branch: 'main'
+                bat 'dir'  // Just to check files are there
+            }
+        }
 
         stage('Build') {
-                steps {
-					echo "Building project using command prompt..."
-					bat '''
-					cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT\\scripts
-					call set_aurix_env.bat
-					cd C:\\project\\Blinky_LED_1_KIT_TC397_TFT
-					make clean
-					make all
-					'''
-					}
-
+            steps {
+                echo "Building project using Jenkins workspace..."
+                bat '''
+                cd scripts
+                call set_aurix_env.bat
+                cd ..
+                make clean
+                make all
+                '''
+            }
         }
 
         stage('Test') {
             steps {
                 echo "Running tests (if available)..."
-                // Add your test commands here later
             }
         }
     }
