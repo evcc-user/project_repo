@@ -4385,3 +4385,53 @@ ROM: 0x20734 (132916) = code: 0x1861e (99870) + romdata: 0x8116 (33046)
 RAM: 0x256b9 (153273) = data + bss
 Finished building: Ethernet_1_KIT_TC397_TFT.siz
  
+Build started...
+12:59:11 **** Incremental Build of configuration TriCore Debug (TASKING) for project Ethernet_1_KIT_TC397_TFT ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: Ethernet_1_KIT_TC397_TFT.elf
+Invoking: TASKING Linker
+cctc -f .Ethernet_1_KIT_TC397_TFT.elf.opt
+Finished building target: Ethernet_1_KIT_TC397_TFT.elf
+ 
+Invoking: Print Size
+elfsize  "Ethernet_1_KIT_TC397_TFT.elf"
+Total sizes:
+ROM: 0x20734 (132916) = code: 0x1861e (99870) + romdata: 0x8116 (33046)
+RAM: 0x256b9 (153273) = data + bss
+Finished building: Ethernet_1_KIT_TC397_TFT.siz
+ 
+AURIX Flasher Software Tool 3.0.4.0, built on 3/11/2025 5:39:42 PM
+::Connected to device... [TC3x] TC39x 
+::Loading  HEX file .......... 
+ ::Warning: The given program file is trying to write on reserved memory addresses, which will be skipped.
+::Erasing Flash memory .......... (Pass)
+::Programming Flash memory ..........(Pass)
+Overall time: 3405 ms
+AURIXFlasher Exit Status: Pass
+Flashing was successfull
+Build started...
+13:04:05 **** Incremental Build of configuration TriCore Debug (TASKING) for project Ethernet_1_KIT_TC397_TFT ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: Ethernet_1_KIT_TC397_TFT.elf
+Invoking: TASKING Linker
+cctc -f .Ethernet_1_KIT_TC397_TFT.elf.opt
+Finished building target: Ethernet_1_KIT_TC397_TFT.elf
+ 
+Invoking: Print Size
+elfsize  "Ethernet_1_KIT_TC397_TFT.elf"
+Total sizes:
+ROM: 0x20734 (132916) = code: 0x1861e (99870) + romdata: 0x8116 (33046)
+RAM: 0x256b9 (153273) = data + bss
+Finished building: Ethernet_1_KIT_TC397_TFT.siz
+ 
+AURIX Flasher Software Tool 3.0.4.0, built on 3/11/2025 5:39:42 PM
+::Connected to device... [TC3x] TC39x 
+::Loading  HEX file .......... 
+ ::Warning: The given program file is trying to write on reserved memory addresses, which will be skipped.
+::Erasing Flash memory .......... (Pass)
+::Programming Flash memory ..........(Pass)
+Overall time: 2462 ms
+AURIXFlasher Exit Status: Pass
+Flashing was successfull

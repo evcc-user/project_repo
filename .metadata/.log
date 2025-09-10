@@ -669,3 +669,15 @@ java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclip
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-09-10 12:51:15.847
 !MESSAGE Include paths were discovered in 37 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-09-10 12:59:11.168
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project Ethernet_1_KIT_TC397_TFT boosted in 568 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-09-10 12:59:11.221
+!MESSAGE Include paths were discovered in 52 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-09-10 13:04:04.627
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project Ethernet_1_KIT_TC397_TFT boosted in 499 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-09-10 13:04:04.666
+!MESSAGE Include paths were discovered in 38 milliseconds.
