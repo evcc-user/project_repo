@@ -1,0 +1,4 @@
+.metadata/ 
+*.o 
+*.d 
+/Ethernet_1_KIT_TC397_TFT/TriCore\ Release\ (TASKING)/ 
